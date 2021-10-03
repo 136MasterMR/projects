@@ -24,10 +24,12 @@
 				<center>
 				<h1 style="color: lightred">
 				<button onclick="resetImg()">Reset
-				</button>
+          			</button>
 				<br />
-            			<br />
+          			<br />
+				<br />
 				<img style="vertical-align:middle" width="270" height="270" src="https://cdn.discordapp.com/attachments/687039326651023382/893910821544022057/1.gif" alt="Loading" onclick="enlargeImg()" id="img1"/>
+            			<!-- Button to reset the Image size -->
 				<b style="color:orange" class="font-cursive">Exercise: "Product Discount"</b>
 					<a style="color:#3b90ff" href="https://download1505.mediafire.com/6b3zkuvk3q6g/oeorr1k8smtnov4/Product+ID+Final+Cost.py" target="_blank">Download</a>
 						<sub style="color:#30c7ff"><small>v1.000</small></sub>
@@ -39,21 +41,19 @@
 				<hr style="border: 1px solid lightblue;"/>
 			</div>
 			    <script>
-      		// Get the img object using its Id
-      		img = document.getElementById("img1");
-      		// Function to increase image size
-      		function enlargeImg() {
-        		// Set image size to 1.5 times original
-        		img.style.transform = "scale(1.5)";
-        		// Animation effect 
-        		img.style.transition = "transform 0.25s ease";
-      		}
-      			// Function to reset image size
-      			function resetImg() {
-        		// Set image size to original
-        		img.style.transform = "scale(1)";
-		        img.style.transition = "transform 0.25s ease";
-      		}
+            img = document.getElementById("img1");
+            // Function to set image dimensions
+            function enlargeImg() {
+                img.style.width = "60%";
+                img.style.height = "auto";
+                img.style.transition = "width 0.5s ease";
+            }
+            // Function to reset image dimensions
+            function resetImg() {
+                img.style.width = "40%";
+                img.style.height = "auto";
+                img.style.transition = "width 0.5s ease";
+            }
     			</script>
 		</center>
 		</main>
