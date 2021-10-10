@@ -23,24 +23,24 @@
 			<section>
 				<center>
 				<h1 style="color: lightred">
-				<button onclick="resetImg()">Reset
+				<button onclick="resetImg3()">Reset
           			</button>
 				<br />
           			<br />
 				<br />
-				<img style="vertical-align:middle" width="160" height="160" src="https://cdn.discordapp.com/attachments/779745579684986911/896682238836633600/c.gif" alt="Loading" onclick="enlargeImg()" id="img1"/>
+				<img style="vertical-align:middle" width="160" height="160" src="https://cdn.discordapp.com/attachments/779745579684986911/896682238836633600/c.gif" alt="Loading" onclick="enlargeImg3()" id="img3"/>
             			<!-- Button to reset the Image size -->
 				<b style="color:orange" class="font-cursive">Exercise: "Balance, Take Out" (Ex.3)</b>
 					<a style="color:#3b90ff" href="https://www.mediafire.com/file/9azvad6pkm6389p/Balance+Take+Out+-+Ex3.py/file" target="_blank">Download</a>
 						<sub style="color:#30c7ff"><small>v1.000</small></sub>
 				</h1>
 				<h1 style="color: lightred">
-				<button onclick="resetImg()">Reset
+				<button onclick="resetImg1()">Reset
           			</button>
 				<br />
           			<br />
 				<br />
-				<img style="vertical-align:middle" width="160" height="160" src="https://cdn.discordapp.com/attachments/687039326651023382/893910821544022057/1.gif" alt="Loading" onclick="enlargeImg()" id="img1"/>
+				<img style="vertical-align:middle" width="160" height="160" src="https://cdn.discordapp.com/attachments/687039326651023382/893910821544022057/1.gif" alt="Loading" onclick="enlargeImg1()" id="img1"/>
             			<!-- Button to reset the Image size -->
 				<b style="color:orange" class="font-cursive">Exercise: "Product Discount (Ex.1)"</b>
 					<a style="color:#3b90ff" href="https://download1505.mediafire.com/6b3zkuvk3q6g/oeorr1k8smtnov4/Product+ID+Final+Cost.py" target="_blank">Download</a>
@@ -52,16 +52,32 @@
 			<div>
 				<hr style="border: 1px solid lightblue;"/>
 			</div>
-			    <script>
-            img = document.getElementById("img1");
+			    <script
+            img = document.getElementById("img3");
             // Function to set image dimensions
-            function enlargeImg() {
+            function enlargeImg3() {
                 img.style.width = "50%";
                 img.style.height = "auto";
                 img.style.transition = "width 0.5s ease";
             }
             // Function to reset image dimensions
-            function resetImg() {
+            function resetImg3() {
+                img.style.width = "9%";
+                img.style.height = "auto";
+                img.style.transition = "width 0.5s ease";
+            }
+
+
+
+            img = document.getElementById("img1");
+            // Function to set image dimensions
+            function enlargeImg1() {
+                img.style.width = "50%";
+                img.style.height = "auto";
+                img.style.transition = "width 0.5s ease";
+            }
+            // Function to reset image dimensions
+            function resetImg1() {
                 img.style.width = "9%";
                 img.style.height = "auto";
                 img.style.transition = "width 0.5s ease";
